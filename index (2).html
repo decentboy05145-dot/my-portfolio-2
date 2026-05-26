@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width
+    =device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>\
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+    
+</body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <div class="logo"> <span> A</span>wais</div>
+                <ul id="sidemenu">
+                 <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Portfofio</a></li>
+                 <li><a href="#">Contact</a></li>
+                 <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <!-- <i class="fa-regular fa-clock"></i> -->
+                 <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Awais Tahir</span>  <br>Based in Karachi</h1>
+            </div>
+        </div>
+        
+    </div>
+        <!-- About  -->
+<div is="About">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+<img src="awais.png" alt="">
+            </div>
+  <div class="About-col-2">
+    <h1 class="sub-title">About ME</h1>\
+    <p class="About-col-2 p">
+"I am a Pre-Engineering student and an aspiring Front-End Developer 
+ with a strong foundation in HTML, CSS, and JavaScript. 
+My passion lies  in  creating responsive,> user-friendly
+ >websites that combine clean code with modern design 
+ . With a background  nr 
+ in engineering,  I approach web
+  development with a logical and problem-solving mindset
+    </p>
+    <div class="tab-title">
+        <p class="tab-link active-link" onclick="opentab('Skills')">Skills</p>
+        
+        <p class="tab-link" onclick="opentab('Education')">Education</p>
+    </div>
+    <div class="tab-contents active-tab" id="Skills">
+        <ul>
+            <li> <span>Web Desgin </span><br>Designing Web interface</li>
+           <li> <span>Web development </span><br> Web development</li>
+        </ul>
+    </div>
+<div class="tab-content" id="Education">
+        <ul>
+            <li> <span>2026 </span><br>Web development course from Saylani </li>
+           <li> <span>2026 </span><br> FSC Pre Pre-Engineering from Bahria College</li>
+        </ul>
+    </div>
+  </div>        
+        </div>
+    </div>
+</div>
+<!-- Services -->
+<div id="services">
+    <div class="container">
+  <h1 class="sub-title">My Services</h1>
+  <div class="services-list">
+<div>
+    <i class="fa-solid fa-laptop-code"></i>
+  <h2>Web Desgin</h2>
+       <p>'specializing' in building modern web layout using HTML CSS and JawaScript.I enjoy turning complex problem in to simple, beautiful and intuitive designs. </p>
+<a href="#">Learn more</a>
+      </div>   
+        <!-- <i class="fa-solid fa-code-branch"></i> -->
+<div>
+      <i class="fa-solid fa-code-branch"></i>
+    <h2>Web development</h2>
+     <p>'specializing' in building modern web layout using HTML CSS and JawaScript.I enjoy turning complex problem in to simple, beautiful and intuitive designs. </p>
+<a href="#">Learn more</a>
+</div>
+        </div>
+    </div>
+</div>
+<!-- portfoli -->
+<div  id="portfoli">
+    <div   class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div   class="work-list">
+          <div class="work">
+      <img src="./tere,png .jfif" alt="" srcset="">
+      <div class="layer">
+<h3>How tere Work</h3>
+<p>The desgin focuses on user-friendliness <br> and clearly communicates the app's value proposition to <br> both riders and drivers </p>
+<a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+</div>++
+          <div class="work">
+      <img src="./IMG-20260404-WA0020.jpg" alt="" srcset="">
+      <div class="layer">
+        <h3>GitHub TCL Page</h3>
+        <p> The visual focus a terminal window demonstarting <br> the $ gh pr status cammand showing how user <br>
+        can quickly check the status of their pull requests. </p>
+        <a href=""> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+</div>
+    </div>
+    <a href="#" class="btn">See More</a>
+</div>
+</div>
+<!-- --------contact------------ -->
+<div id="contact">
+<div class="cobtainer">
+  <div class="row">
+  <div class="contact-left">
+ <h1 class="sub-title">Contact Me </h1>
+    <p> <i class="fa-solid fa-paper-plane"></i>>awaistahir02356@gmail.com</p>
+   <p>   03099502356</p>        
+   <div  class="social-icons">
+      <a href=" #"> <i class="fa-brands fa-facebook-f"></i></a>     
+  <a href=" #"> <i class="fa-brands fa-x-twitter"></i> </a>    
+      <a href=" #"> <i class="fa-brands fa-instagram"></i></a>     
+     <a href=" #"> <i class="fa-brands fa-linkedin"></i></a>     
+    <a href=" #"> <i class="fa-brands twi"></i></a>  
+      </div>
+    <a href="" class="btn-html">Download CV</a>
+            </div>
+<div class="contact-right">
+<form>
+    <input type="text" name="Name" placeholder="Your Name " required>
+
+    <input type="text" name="email" placeholder="Your Email " required>
+    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+<button type="submit" class="btn-html">submit</button>
+</form>
+</div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright Awais . Made with by Easy Tutorials</p>
+    </div>
+</div>
+<!-- -------js------ -->
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+      var tabcontents = document.getElementsByClassName('tab-contents');
+      function opentab(tabname){
+        for (tablink of tablinks) {
+            tablink.classList.remove('active-link');
+        }
+                for (tabcontent of tabcontents) {
+            tabcontent.classList.remove('active-tab');
+        }
+event.currentTarget.classList.add('active-link');
+document.getElementById(tabname).classList.add('active-tab')
+      }
+</script>-
+    <script>
+var sidemenu = document.getElementById('sidemenu');
+function openmenu(){
+    sidemenu.style.right ='0';
+}
+function closemenu(){
+    sidemenu.style.right ='-200px';
+}
+
+    </script>
+</body>
+</html>
